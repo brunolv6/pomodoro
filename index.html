@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body class='b--pomodoro-on'>
+    <div class="b-body-effect"></div>
+    <div class="b-message">Estado Focado</div>
+
+    <div class="b-configuration">
+        <div class="b-configuration__item c--pomodoro-break">
+            <div>Pomodoro Time</div>
+            <input type="number" required="required" value="25">
+        </div>
+        <div class="b-configuration__item c--resume-break">
+            <div>Resume Break</div>
+            <input type="number" required="required" value="5">
+        </div>
+        <div class="b-configuration__item c--short-break">
+            <div>Short Break</div>
+            <input type="number" required="required" value="6">
+        </div>
+        <div class="b-configuration__item c--long-break">
+            <div>Long Break</div>
+            <input type="number" required="required" value="20">
+        </div>
+    </div>
+
+    <div class="b-controls">
+        <div class="b-controls-start">Start</div>
+        <div class="b-controls-stop">Stop</div>
+        <div class="b-controls-reset">Reset</div>
+    </div>
+
+    <audio id="b--sound" src="https://freesound.org/data/previews/72/72125_1028972-lq.mp3" preload="auto"></audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
